@@ -12,7 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('kits', function (Blueprint $table) {
-            $table->id();
+            $table->idKit();//Clave Primaria
+            $table->string('nombre');
             $table->timestamps();
         });
     }
