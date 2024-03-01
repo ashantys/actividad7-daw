@@ -15,4 +15,9 @@ class Curso extends Model
         return $this->hasOne(Kit::class);
     }
 
+    public function grupo()
+    {
+        return $this->belongsTo(Grupo::class);
+    }
+
 }
