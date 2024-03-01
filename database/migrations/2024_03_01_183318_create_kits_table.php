@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('kits', function (Blueprint $table) {
-            $table->idKit();//Clave Primaria
+            $table->id();//Clave Primaria
             $table->string('nombre');
             $table->timestamps();
         });
