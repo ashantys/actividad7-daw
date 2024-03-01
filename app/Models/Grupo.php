@@ -12,4 +12,9 @@ class Grupo extends Model
     {
         return $this->hasOne(Curso::class);
     }
+
+    public function usuarios()
+    {
+        return $this->hasMany(Usuario::class);
+    }
 }
