@@ -15,6 +15,8 @@ return new class extends Migration
             $table->idGrupo();//Clave Primaria
             $table->string('nivel');
             $table->timestamps();
+
+            $table->foreign('idCurso')->references('idCurso')->on('cursos');
         });
     }
 
