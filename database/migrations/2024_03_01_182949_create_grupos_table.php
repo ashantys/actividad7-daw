@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('grupos', function (Blueprint $table) {
-            $table->id();//Clave Primaria
+            $table->idGrupos();//Clave Primaria
             $table->string('nivel');
             $table->timestamps();
         });

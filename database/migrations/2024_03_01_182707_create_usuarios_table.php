@@ -12,11 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('usuarios', function (Blueprint $table) {
-            $table->id(); //Clave primaria
+            $table->idUsuarios(); //Clave primaria
             $table->string('rol');
             $table->timestamps();
 
-            $table->foreign('group_id')->references('id')->on('groupos');
+            $table->foreign('idGrupos')->references('id')->on('grupos');
         });
     }
 

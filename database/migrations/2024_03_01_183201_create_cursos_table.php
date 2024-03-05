@@ -12,13 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('cursos', function (Blueprint $table) {
-            $table->id();//ClavePrimaria
+            $table->idCursos();//ClavePrimaria
             $table->string('contenido');
             $table->string('titulo');
             $table->string('portada');
             $table->timestamps();
 
-            $table->foreign('kit_id')->references('id')->on('kits');
+            $table->foreign('idKits')->references('id')->on('kits');
         });
     }
 
