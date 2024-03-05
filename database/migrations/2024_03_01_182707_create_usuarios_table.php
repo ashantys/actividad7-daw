@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id(); //Clave primaria
             $table->string('rol');
             $table->timestamps();
+
+            $table->foreign('group_id')->references('id')->on('groupos');
         });
     }
 
