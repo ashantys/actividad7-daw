@@ -18,7 +18,12 @@ return new class extends Migration
             $table->string('portada');
             $table->timestamps();
 
-            $table->foreign('idKits')->references('id')->on('kits');
+            //FK de cursos a kits
+            $table->unsignedBigInteger('id_kits');
+            $table->foreign('id_kits')
+                ->references('id')
+                ->on('kits')
+                ->onDelete('cascade');
         });
     }
 

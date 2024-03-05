@@ -17,8 +17,8 @@ return new class extends Migration
             $table->timestamps();
 
             //FK de usuarios a grupos
-            $table->unsignedBigInteger('grupo_id');
-            $table->foreign('grupo_id')
+            $table->unsignedBigInteger('id_grupo');
+            $table->foreign('id_grupo')
                 ->references('id')
                 ->on('grupos')
                 ->onDelete('cascade');
