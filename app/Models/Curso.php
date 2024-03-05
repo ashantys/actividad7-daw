@@ -12,7 +12,7 @@ class Curso extends Model
 
     public function kit()
     {
-        return $this->hasOne(Kit::class);
+        return $this->hasOne(Kit::class, 'id');
     }
 
     public function grupo()
