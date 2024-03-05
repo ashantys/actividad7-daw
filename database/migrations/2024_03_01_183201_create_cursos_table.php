@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('titulo');
             $table->string('portada');
             $table->timestamps();
+
+            $table->foreign('kit_id')->references('id')->on('kits');
         });
     }
 
