@@ -17,7 +17,10 @@ class CourseFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'contenido' => $this->faker->paragraph,
+            'titulo' => $this->faker->sentence,
+            'portada' => $this->faker->imageUrl(),
+            'id_kits' => \App\Models\Kit::factory(),
         ];
     }
 }
