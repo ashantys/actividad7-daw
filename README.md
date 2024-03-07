@@ -4,7 +4,8 @@ Sistema de Gestión Educativa para Robótica diseñada para facilitar la adminis
 
 ## Diagrama ER
 
-`![Digrama ER](Tarea6 Diagrama ER.png)`.
+`![Digrama ER](Tarea6 Diagrama ER.png
+)`.
 
 
 
