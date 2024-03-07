@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Couso>
  */
-class CourseFactory extends Factory
+class CursoFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -16,11 +16,15 @@ class CourseFactory extends Factory
      */
     public function definition(): array
     {
+        $min = 1; // Definir el valor mínimo
+        $max = 3; // Definir el valor máximo
+        $id_kits = random_int($min, $max); 
+
         return [
             'contenido' => $this->faker->paragraph,
             'titulo' => $this->faker->sentence,
             'portada' => $this->faker->imageUrl(),
-            'id_kits' => \App\Models\Kit::factory(),
+            'id_kits' => $id_kits,
         ];
     }
 }

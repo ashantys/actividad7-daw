@@ -12,6 +12,6 @@ class CursoSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        \App\Models\Curso::factory(100)->create();
     }
 }
