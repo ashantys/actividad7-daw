@@ -16,9 +16,9 @@ class CursoFactory extends Factory
      */
     public function definition(): array
     {
-        $min = 1; // Definir el valor mínimo
-        $max = 3; // Definir el valor máximo
-        $id_kits = random_int($min, $max); 
+        $min = 1;
+        $max = 3;
+        $id_kits = random_int($min, $max);
 
         return [
             'contenido' => $this->faker->paragraph,
