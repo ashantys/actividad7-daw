@@ -1,3 +1,13 @@
+# Tarea 6 - Diseño de Aplicaciones Web
+
+Sistema de Gestión Educativa para Robótica diseñada para facilitar la administración y el seguimiento de cursos de robótica ofrecidos por una institución educativa. La plataforma permite a los administradores, docentes y estudiantes acceder a recursos educativos, participar en actividades prácticas y realizar un seguimiento del progreso del curso.
+
+## Diagrama ER
+
+`![Digrama ER](Tarea6 Diagrama ER.png)`.
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
